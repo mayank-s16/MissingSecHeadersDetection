@@ -2,7 +2,7 @@
 param([Parameter(Mandatory=$true)][string]$URL)
 
 # Defining security headers to check
-$sec_headers = @("X-Frame Options", "Strict-Transport-Security", "Content-Security-Policy", "X-Content-Type-Options", "Referrer-Policy", "Permissions-Policy", "Feature-Policy", "X-XSS-Protection", "Cache-Control")
+$sec_headers = @("X-Frame-Options", "Strict-Transport-Security", "Content-Security-Policy", "X-Content-Type-Options", "Referrer-Policy", "Permissions-Policy", "Feature-Policy", "X-XSS-Protection", "Cache-Control")
 
 # Hitting the URL
 try{
